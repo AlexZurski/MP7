@@ -5,7 +5,6 @@ public class Player {
 	private int gamesWon = 0;
 	
 	public Player() {
-		
 	}
 	
 	public Player(String inName) {
@@ -18,6 +17,7 @@ public class Player {
 	public void setName(String name) {
 		this.name = name;
 	}
+	
 	public String getPiece() {
 		return piece;
 	}
@@ -25,4 +25,13 @@ public class Player {
 		this.piece = piece;
 	}
 	
+	public int getGamesWon() {
+		return gamesWon;
+	}
+	public void setGamesWon(int gamesWon) {
+		this.gamesWon = gamesWon;
+	}
+	public void won() {
+		gamesWon++;
+	}
 }
