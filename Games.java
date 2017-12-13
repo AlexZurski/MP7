@@ -25,13 +25,8 @@ public class Games {
         String name1 = scanner.nextLine();
         System.out.println("Enter Player 2's Name");
         String name2 = scanner.nextLine();
-        if (name1.length() >= name2.length()) {
-        	player1.setName(name1);
-        	player2.setName(name2);
-        } else {
-        	player1.setName(name2);
-        	player2.setName(name1);
-        }
+        player1.setName(name1);
+        player2.setName(name2);
         player1.setPiece("O");
         player2.setPiece("X");
     	while (play) {
